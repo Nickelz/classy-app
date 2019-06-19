@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,15 @@
 		1129D92922A9131700298897 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92622A9131700298897 /* CBTabBarButton.swift */; };
 		1129D92B22A9161E00298897 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92A22A9161E00298897 /* CalendarVC.swift */; };
 		1129D92D22A9162C00298897 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92C22A9162C00298897 /* CoursesVC.swift */; };
+		117D627C22AA89DF005958E1 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D627B22AA89DF005958E1 /* UIViewExt.swift */; };
+		11D900B722AAA490005CE361 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B222AAA490005CE361 /* MavenPro-Black.ttf */; };
+		11D900B822AAA490005CE361 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */; };
+		11D900B922AAA490005CE361 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B422AAA490005CE361 /* OFL.txt */; };
+		11D900BA22AAA490005CE361 /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B522AAA490005CE361 /* MavenPro-Medium.ttf */; };
+		11D900BB22AAA490005CE361 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B622AAA490005CE361 /* MavenPro-Bold.ttf */; };
+		11D900BD22AAA587005CE361 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D900BC22AAA587005CE361 /* Constants.swift */; };
+		11D900BF22AAE674005CE361 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D900BE22AAE674005CE361 /* HomeCell.swift */; };
+		4BAA94A838DB828E7F325AFC /* Pods_Classy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A60B1DC8E1B8A22C6F3015 /* Pods_Classy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,17 @@
 		1129D92622A9131700298897 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = Classy/Classes/CBTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		1129D92A22A9161E00298897 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		1129D92C22A9162C00298897 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
+		117D627B22AA89DF005958E1 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		11D900B222AAA490005CE361 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Black.ttf"; sourceTree = "<group>"; };
+		11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
+		11D900B422AAA490005CE361 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		11D900B522AAA490005CE361 /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		11D900B622AAA490005CE361 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		11D900BC22AAA587005CE361 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		11D900BE22AAE674005CE361 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		79D84DC2E9C1FA5D80FF797D /* Pods-Classy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classy.release.xcconfig"; path = "Target Support Files/Pods-Classy/Pods-Classy.release.xcconfig"; sourceTree = "<group>"; };
+		92A60B1DC8E1B8A22C6F3015 /* Pods_Classy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Classy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62C09EFAB0641B1B58F4B19 /* Pods-Classy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classy.debug.xcconfig"; path = "Target Support Files/Pods-Classy/Pods-Classy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BAA94A838DB828E7F325AFC /* Pods_Classy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +71,8 @@
 			children = (
 				1129D8F522A7CE3E00298897 /* Classy */,
 				1129D8F422A7CE3E00298897 /* Products */,
+				B4D0F5A7874B6AA676214EEA /* Pods */,
+				52C198801D13B5619ECA2F58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,14 +87,15 @@
 		1129D8F522A7CE3E00298897 /* Classy */ = {
 			isa = PBXGroup;
 			children = (
-				1129D8F622A7CE3F00298897 /* AppDelegate.swift */,
 				1129D8FD22A7CE4400298897 /* Assets.xcassets */,
+				1129D8F622A7CE3F00298897 /* AppDelegate.swift */,
 				1129D8FF22A7CE4400298897 /* LaunchScreen.storyboard */,
 				1129D90222A7CE4400298897 /* Info.plist */,
 				1129D90A22A7CE8400298897 /* Model */,
 				1129D90922A7CE8000298897 /* View */,
 				1129D90822A7CE7600298897 /* Controller */,
 				1129D92322A9131100298897 /* New Group */,
+				117D627A22AA89B3005958E1 /* Utilities */,
 				1129D92122A9130600298897 /* Classes */,
 			);
 			path = Classy;
@@ -90,6 +114,7 @@
 		1129D90922A7CE8000298897 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11D900BE22AAE674005CE361 /* HomeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +136,45 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		117D627A22AA89B3005958E1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				11D900B122AAA490005CE361 /* Fonts */,
+				117D627B22AA89DF005958E1 /* UIViewExt.swift */,
+				11D900BC22AAA587005CE361 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		11D900B122AAA490005CE361 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11D900B222AAA490005CE361 /* MavenPro-Black.ttf */,
+				11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */,
+				11D900B422AAA490005CE361 /* OFL.txt */,
+				11D900B522AAA490005CE361 /* MavenPro-Medium.ttf */,
+				11D900B622AAA490005CE361 /* MavenPro-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		52C198801D13B5619ECA2F58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A60B1DC8E1B8A22C6F3015 /* Pods_Classy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4D0F5A7874B6AA676214EEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A62C09EFAB0641B1B58F4B19 /* Pods-Classy.debug.xcconfig */,
+				79D84DC2E9C1FA5D80FF797D /* Pods-Classy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1129D90522A7CE4400298897 /* Build configuration list for PBXNativeTarget "Classy" */;
 			buildPhases = (
+				73B4BA0F4A58F43D884D7B3B /* [CP] Check Pods Manifest.lock */,
 				1129D8EF22A7CE3E00298897 /* Sources */,
 				1129D8F022A7CE3E00298897 /* Frameworks */,
 				1129D8F122A7CE3E00298897 /* Resources */,
+				A2CCEDCBE94B8145BE7C0CF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +235,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D900B922AAA490005CE361 /* OFL.txt in Resources */,
+				11D900B722AAA490005CE361 /* MavenPro-Black.ttf in Resources */,
+				11D900BA22AAA490005CE361 /* MavenPro-Medium.ttf in Resources */,
+				11D900BB22AAA490005CE361 /* MavenPro-Bold.ttf in Resources */,
+				11D900B822AAA490005CE361 /* MavenPro-Regular.ttf in Resources */,
 				1129D92222A9130600298897 /* Classes in Resources */,
 				1129D90122A7CE4400298897 /* LaunchScreen.storyboard in Resources */,
 				1129D8FE22A7CE4400298897 /* Assets.xcassets in Resources */,
@@ -177,6 +248,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73B4BA0F4A58F43D884D7B3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Classy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2CCEDCBE94B8145BE7C0CF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Classy/Pods-Classy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Classy/Pods-Classy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Classy/Pods-Classy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1129D8EF22A7CE3E00298897 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -184,8 +297,11 @@
 			files = (
 				1129D8F722A7CE3F00298897 /* AppDelegate.swift in Sources */,
 				1129D92722A9131700298897 /* BubbleTabBar.swift in Sources */,
+				11D900BF22AAE674005CE361 /* HomeCell.swift in Sources */,
 				1129D92D22A9162C00298897 /* CoursesVC.swift in Sources */,
 				1129D92B22A9161E00298897 /* CalendarVC.swift in Sources */,
+				11D900BD22AAA587005CE361 /* Constants.swift in Sources */,
+				117D627C22AA89DF005958E1 /* UIViewExt.swift in Sources */,
 				1129D92922A9131700298897 /* CBTabBarButton.swift in Sources */,
 				1129D92822A9131700298897 /* BubbleTabBarController.swift in Sources */,
 				1129D90C22A7CF8C00298897 /* HomeVC.swift in Sources */,
@@ -324,6 +440,7 @@
 		};
 		1129D90622A7CE4400298897 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62C09EFAB0641B1B58F4B19 /* Pods-Classy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +459,7 @@
 		};
 		1129D90722A7CE4400298897 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D84DC2E9C1FA5D80FF797D /* Pods-Classy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

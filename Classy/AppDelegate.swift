@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -25,15 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         courses.tabBarItem = UITabBarItem(title: "Courses", image: #imageLiteral(resourceName: "books"), tag: 3)
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeVC = BubbleTabBarController()
-            homeVC.viewControllers = [home, calendar, courses]
-            homeVC.tabBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-            homeVC.tabBar.backgroundColor = .white
-        window!.rootViewController = homeVC
+        let base = BubbleTabBarController()
+            base.viewControllers = [home, calendar, courses]
+            base.tabBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            base.tabBar.backgroundColor = .white
+        window!.rootViewController = base
         window!.makeKeyAndVisible()
         
         for viewController in [home, calendar, courses] {
-            viewController.view.backgroundColor = .white
+            viewController.view.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
         }
         
         return true

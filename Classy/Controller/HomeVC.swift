@@ -112,7 +112,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? HomeCell {
-            cell.taskTitle?.text = arr[indexPath.section][indexPath.row]
+			cell.taskTitle!.text = arr[indexPath.section][indexPath.row]
             return cell
         }
         return UITableViewCell()

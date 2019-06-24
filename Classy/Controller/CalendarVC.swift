@@ -56,7 +56,12 @@ class CalendarVC: UIViewController {
 			TitleBar.addSubview(collectionView)
 			
 			layout.scrollDirection = .horizontal
+			layout.itemSize = CGSize(width: 32, height: 46)
+//			layout.minimumLineSpacing = 30
+			
 			collectionView.collectionViewLayout = layout
+			collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20) // Creates a space between the first cell and after the last cell
+			collectionView.showsHorizontalScrollIndicator = false
 			
 			// Constraints
 			collectionView.snp.makeConstraints({ (make) in
@@ -80,7 +85,7 @@ class CalendarVC: UIViewController {
 extension CalendarVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 5
+		return 20
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -49,15 +49,15 @@ class HomeCell: UITableViewCell {
 			
 			// Constraints
 			view.snp.makeConstraints({ (make) in
-				make.top.equalTo(containerView).offset(10)
-				make.left.equalTo(containerView).offset(10)
-				make.bottom.equalTo(containerView).offset(-10)
+				make.top.equalToSuperview().offset(10)
+				make.left.equalToSuperview().offset(10)
+				make.bottom.equalToSuperview().offset(-10)
 				make.width.equalTo(2)
 			})
 			
 			// Customization
 			view.backgroundColor = .black
-			view.layer.cornerRadius = 3
+			view.layer.cornerRadius = 1
 			view.layer.masksToBounds = true
 			
 			return view

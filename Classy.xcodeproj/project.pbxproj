@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11260E6222C219CD00D19848 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11260E6122C219CD00D19848 /* CalendarCell.swift */; };
 		1129D8F722A7CE3F00298897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D8F622A7CE3F00298897 /* AppDelegate.swift */; };
 		1129D8FE22A7CE4400298897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1129D8FD22A7CE4400298897 /* Assets.xcassets */; };
 		1129D90122A7CE4400298897 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1129D8FF22A7CE4400298897 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11260E6122C219CD00D19848 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		1129D8F322A7CE3E00298897 /* Classy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1129D8F622A7CE3F00298897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1129D8FD22A7CE4400298897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				11D900BE22AAE674005CE361 /* HomeCell.swift */,
 				116A5A1322BF24A10090F005 /* DayCell.swift */,
+				11260E6122C219CD00D19848 /* CalendarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				1129D92B22A9161E00298897 /* CalendarVC.swift in Sources */,
 				11D900BD22AAA587005CE361 /* Constants.swift in Sources */,
 				117D627C22AA89DF005958E1 /* UIViewExt.swift in Sources */,
+				11260E6222C219CD00D19848 /* CalendarCell.swift in Sources */,
 				1129D92922A9131700298897 /* CBTabBarButton.swift in Sources */,
 				1129D92822A9131700298897 /* BubbleTabBarController.swift in Sources */,
 				1129D90C22A7CF8C00298897 /* HomeVC.swift in Sources */,

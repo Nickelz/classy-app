@@ -13,7 +13,7 @@ class CalendarVC: UIViewController {
 	// Components
 	var TitleBar: UIView!
 	var DaysCollectionView: UICollectionView!
-//	var TasksTableView: UITableView!
+	var TasksTableView: UITableView!
 	
 
     override func viewDidLoad() {
@@ -32,6 +32,7 @@ class CalendarVC: UIViewController {
 			view.dropShadow(shadowRadius: 8.0, shadowOpacity: 1.0, shadowOffset: CGSize.zero, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.08))
 			view.layer.cornerRadius = 8
 			view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+			
 			superView.addSubview(view)
 			
 			view.snp.makeConstraints({ (make) in
@@ -57,7 +58,6 @@ class CalendarVC: UIViewController {
 			
 			layout.scrollDirection = .horizontal
 			layout.itemSize = CGSize(width: 32, height: 46)
-//			layout.minimumLineSpacing = 30
 			
 			collectionView.collectionViewLayout = layout
 			collectionView.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20) // Creates a space between the first cell and after the last cell
@@ -65,17 +65,41 @@ class CalendarVC: UIViewController {
 			
 			// Constraints
 			collectionView.snp.makeConstraints({ (make) in
-				make.top.equalToSuperview().offset(45)
+				make.top.equalToSuperview().offset(50)
 				make.right.equalToSuperview()
 				make.left.equalToSuperview()
-				make.bottom.equalToSuperview().offset(-10)
+				make.bottom.equalToSuperview()
 			})
 			
 			// Customization
-			collectionView.backgroundColor = .yellow
+			collectionView.backgroundColor = .clear
 			
 			
 			return collectionView
+		}()
+		
+		TasksTableView = {
+			let tableView = UITableView()
+			
+			tableView.dataSource = self
+			tableView.delegate = self
+			
+			tableView.register(CalendarCell.self, forCellReuseIdentifier: "Calendar Cell")
+			
+			tableView.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
+			tableView.rowHeight = 80.0
+			tableView.separatorStyle = .none
+			
+			superView.addSubview(tableView)
+			
+			tableView.snp.makeConstraints({ (make) in
+				make.top.equalTo(TitleBar.snp.bottom)
+				make.right.equalToSuperview()
+				make.left.equalToSuperview()
+				make.bottom.equalToSuperview()
+			})
+			
+			return tableView
 		}()
 		
     }
@@ -93,5 +117,21 @@ extension CalendarVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLa
 		
 		return cell
 	}
+	
+}
+
+extension CalendarVC: UITableViewDelegate, UITableViewDataSource {
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 50
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		if let cell = tableView.dequeueReusableCell(withIdentifier: "Calendar Cell", for: indexPath) as? CalendarCell {
+			return cell
+		}
+		return UITableViewCell()
+	}
+	
 	
 }

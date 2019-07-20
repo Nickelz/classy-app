@@ -29,10 +29,6 @@ class CoursesVC: UIViewController {
 		TitleBar = {
 			let view = UIView()
 			
-			view.backgroundColor = .white
-			view.dropShadow(shadowRadius: 8.0, shadowOpacity: 1.0, shadowOffset: CGSize.zero, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.08))
-			view.layer.cornerRadius = 8
-			view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
 			superView.addSubview(view)
 			
 			view.snp.makeConstraints({ (make) in
@@ -42,6 +38,11 @@ class CoursesVC: UIViewController {
 				make.height.equalTo(91)
 			})
 			
+			view.backgroundColor = .white
+			view.dropShadow(shadowRadius: 8.0, shadowOpacity: 1.0, shadowOffset: CGSize.zero, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.08))
+			view.layer.cornerRadius = 8
+			view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+			
 			return view
 		}()
 		
@@ -50,13 +51,11 @@ class CoursesVC: UIViewController {
 			
 			TitleBar.addSubview(label)
 			
-			// Constraints
 			label.snp.makeConstraints({ (make) in
 				make.centerX.equalToSuperview()
 				make.bottom.equalToSuperview().offset(-15)
 			})
 			
-			// Customization
 			label.text = "Courses"
 			label.font = UIFont(name: "MavenPro-Bold", size: 19)
 			label.textColor = .black
@@ -96,6 +95,7 @@ class CoursesVC: UIViewController {
 			let icon = UIImage(named: "add")
 			button.setImage(icon, for: .normal)
 			button.imageView?.contentMode = .scaleAspectFit
+			button.addTarget(self, action: #selector(addButtonHandler), for: .touchUpInside)
 			
 			return button
 		}()
@@ -124,6 +124,11 @@ class CoursesVC: UIViewController {
 			return tableView
 		}()
     }
+	
+	@objc func addButtonHandler() {
+		let vc = AddCourseVC()
+		self.present(vc, animated: false, completion: nil)
+	}
 
 }
 

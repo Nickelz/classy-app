@@ -18,9 +18,12 @@
 		1129D92922A9131700298897 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92622A9131700298897 /* CBTabBarButton.swift */; };
 		1129D92B22A9161E00298897 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92A22A9161E00298897 /* CalendarVC.swift */; };
 		1129D92D22A9162C00298897 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D92C22A9162C00298897 /* CoursesVC.swift */; };
+		1150D36E22E2065F00452AB6 /* WeekDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150D36D22E2065F00452AB6 /* WeekDayCell.swift */; };
 		116A5A1422BF24A10090F005 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A5A1322BF24A10090F005 /* DayCell.swift */; };
 		11732A1222C3F36B002C47B9 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11732A1122C3F36B002C47B9 /* CourseCell.swift */; };
 		117D627C22AA89DF005958E1 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D627B22AA89DF005958E1 /* UIViewExt.swift */; };
+		119263E922CA4FE8000E564A /* AddCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119263E722CA4FE8000E564A /* AddCourseVC.swift */; };
+		11ACB0C222E34DB900C32506 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ACB0C122E34DB900C32506 /* ClassCell.swift */; };
 		11D900B722AAA490005CE361 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B222AAA490005CE361 /* MavenPro-Black.ttf */; };
 		11D900B822AAA490005CE361 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */; };
 		11D900B922AAA490005CE361 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B422AAA490005CE361 /* OFL.txt */; };
@@ -45,9 +48,12 @@
 		1129D92622A9131700298897 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBTabBarButton.swift; path = Classy/Classes/CBTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		1129D92A22A9161E00298897 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		1129D92C22A9162C00298897 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
+		1150D36D22E2065F00452AB6 /* WeekDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayCell.swift; sourceTree = "<group>"; };
 		116A5A1322BF24A10090F005 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 		11732A1122C3F36B002C47B9 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		117D627B22AA89DF005958E1 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		119263E722CA4FE8000E564A /* AddCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseVC.swift; sourceTree = "<group>"; };
+		11ACB0C122E34DB900C32506 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		11D900B222AAA490005CE361 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Black.ttf"; sourceTree = "<group>"; };
 		11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
 		11D900B422AAA490005CE361 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 				1129D90B22A7CF8C00298897 /* HomeVC.swift */,
 				1129D92A22A9161E00298897 /* CalendarVC.swift */,
 				1129D92C22A9162C00298897 /* CoursesVC.swift */,
+				119263E722CA4FE8000E564A /* AddCourseVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +131,8 @@
 				116A5A1322BF24A10090F005 /* DayCell.swift */,
 				11260E6122C219CD00D19848 /* CalendarCell.swift */,
 				11732A1122C3F36B002C47B9 /* CourseCell.swift */,
+				1150D36D22E2065F00452AB6 /* WeekDayCell.swift */,
+				11ACB0C122E34DB900C32506 /* ClassCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11ACB0C222E34DB900C32506 /* ClassCell.swift in Sources */,
 				1129D8F722A7CE3F00298897 /* AppDelegate.swift in Sources */,
+				119263E922CA4FE8000E564A /* AddCourseVC.swift in Sources */,
 				1129D92722A9131700298897 /* BubbleTabBar.swift in Sources */,
 				11D900BF22AAE674005CE361 /* HomeCell.swift in Sources */,
 				1129D92D22A9162C00298897 /* CoursesVC.swift in Sources */,
 				11732A1222C3F36B002C47B9 /* CourseCell.swift in Sources */,
+				1150D36E22E2065F00452AB6 /* WeekDayCell.swift in Sources */,
 				1129D92B22A9161E00298897 /* CalendarVC.swift in Sources */,
 				11D900BD22AAA587005CE361 /* Constants.swift in Sources */,
 				117D627C22AA89DF005958E1 /* UIViewExt.swift in Sources */,

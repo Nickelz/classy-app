@@ -19,7 +19,7 @@ class CourseCell: UITableViewCell {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		let superView = self.contentView
-		superView.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
+		superView.backgroundColor = BACKGROUND_COLOR
 		
 		containerView = {
 			containerView = UIView()

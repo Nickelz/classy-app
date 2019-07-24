@@ -17,7 +17,7 @@ class AddCourseVC: UIViewController {
 	var AddCourseLabel: UILabel!
 	
 	// Variables
-	var cellTypes: [CellTypes] = [.CourseInformation, .TimeAndDate, .AlertsButton, .ClassesCell]
+	var cellTypes: [CellTypes] = [.CourseInformation, .TimeAndDate, .AlertsButton, .ClassesCell, .DoneCells]
 	var addedClasses = 10
 
     override func viewDidLoad() {
@@ -71,6 +71,7 @@ class AddCourseVC: UIViewController {
 			superView.addSubview(tableView)
 			
 			tableView.backgroundColor = BACKGROUND_COLOR
+			tableView.separatorStyle = .none
 			
 			tableView.snp.makeConstraints({ (make) in
 				make.top.equalTo(AddCourseLabel.snp.bottom).offset(20)
@@ -108,7 +109,7 @@ class AddCourseVC: UIViewController {
 extension AddCourseVC: UITableViewDelegate, UITableViewDataSource {
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
-		return 4
+		return cellTypes.count
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

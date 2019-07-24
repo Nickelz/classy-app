@@ -33,10 +33,10 @@ class CourseCell: UITableViewCell {
 			
 			// Customization
 			containerView.backgroundColor = .white
-			containerView.layer.cornerRadius = 8
+			containerView.layer.cornerRadius = 5
 			containerView.layer.masksToBounds = true
 			
-			containerView.dropShadow(shadowRadius: 8.0, shadowOpacity: 1.0, shadowOffset: .zero, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.08))
+			containerView.dropShadow(shadowRadius: 4.0, shadowOpacity: 1.0, shadowOffset: .zero, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.08))
 			
 			return containerView
 		}()

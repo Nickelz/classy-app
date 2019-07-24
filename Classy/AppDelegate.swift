@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         for viewController in [home, calendar, courses] {
-            viewController.view.backgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.0)
+            viewController.view.backgroundColor = BACKGROUND_COLOR
         }
         
         return true

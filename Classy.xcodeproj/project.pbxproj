@@ -32,6 +32,8 @@
 		11BD5F5122E7309A0056F75E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F5022E7309A0056F75E /* Constants.swift */; };
 		11BD5F5822E765450056F75E /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F5622E765450056F75E /* ClassCell.swift */; };
 		11BD5F5922E765450056F75E /* ClassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BD5F5722E765450056F75E /* ClassCell.xib */; };
+		11BEBE0822E8B2FF00E50E4C /* DoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BEBE0622E8B2FF00E50E4C /* DoneCell.swift */; };
+		11BEBE0922E8B2FF00E50E4C /* DoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BEBE0722E8B2FF00E50E4C /* DoneCell.xib */; };
 		11D900B722AAA490005CE361 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B222AAA490005CE361 /* MavenPro-Black.ttf */; };
 		11D900B822AAA490005CE361 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */; };
 		11D900B922AAA490005CE361 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11D900B422AAA490005CE361 /* OFL.txt */; };
@@ -69,6 +71,8 @@
 		11BD5F5022E7309A0056F75E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11BD5F5622E765450056F75E /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		11BD5F5722E765450056F75E /* ClassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCell.xib; sourceTree = "<group>"; };
+		11BEBE0622E8B2FF00E50E4C /* DoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneCell.swift; sourceTree = "<group>"; };
+		11BEBE0722E8B2FF00E50E4C /* DoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneCell.xib; sourceTree = "<group>"; };
 		11D900B222AAA490005CE361 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Black.ttf"; sourceTree = "<group>"; };
 		11D900B322AAA490005CE361 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MavenPro-Regular.ttf"; sourceTree = "<group>"; };
 		11D900B422AAA490005CE361 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				116E928422E61F5D0062018D /* AlertsCell.xib */,
 				11BD5F5622E765450056F75E /* ClassCell.swift */,
 				11BD5F5722E765450056F75E /* ClassCell.xib */,
+				11BEBE0622E8B2FF00E50E4C /* DoneCell.swift */,
+				11BEBE0722E8B2FF00E50E4C /* DoneCell.xib */,
 			);
 			path = "TableView Cells";
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 				11BD5F5922E765450056F75E /* ClassCell.xib in Resources */,
 				116E928622E61F5D0062018D /* AlertsCell.xib in Resources */,
 				11D900B922AAA490005CE361 /* OFL.txt in Resources */,
+				11BEBE0922E8B2FF00E50E4C /* DoneCell.xib in Resources */,
 				11D900B722AAA490005CE361 /* MavenPro-Black.ttf in Resources */,
 				11D900BA22AAA490005CE361 /* MavenPro-Medium.ttf in Resources */,
 				11D900BB22AAA490005CE361 /* MavenPro-Bold.ttf in Resources */,
@@ -365,6 +372,7 @@
 				1129D90C22A7CF8C00298897 /* HomeVC.swift in Sources */,
 				116A5A1422BF24A10090F005 /* DayCell.swift in Sources */,
 				116E928122E61B160062018D /* DatesCell.swift in Sources */,
+				11BEBE0822E8B2FF00E50E4C /* DoneCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

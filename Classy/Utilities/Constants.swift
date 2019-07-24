@@ -20,12 +20,14 @@ enum CellTypes {
 	case TimeAndDate
 	case AlertsButton
 	case ClassesCell
+	case DoneCells
 	
 	func getHeight() -> CGFloat {
 		switch self {
-			case .CourseInformation: return 80
-			case .ClassesCell, .TimeAndDate: return 90
-			case .AlertsButton: return 50
+			case .CourseInformation: return 90
+			case .ClassesCell, .TimeAndDate: return 100
+			case .AlertsButton: return 60
+			case .DoneCells: return 50
 		}
 	}
 	
@@ -35,6 +37,7 @@ enum CellTypes {
 			case .TimeAndDate: return DatesCell.self
 			case .AlertsButton: return AlertsCell.self
 			case .ClassesCell: return ClassCell.self
+			case .DoneCells: return DoneCell.self
 		}
 	}
 }

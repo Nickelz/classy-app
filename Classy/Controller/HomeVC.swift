@@ -15,6 +15,7 @@ class HomeVC: UIViewController {
     var TitleBar: UIView!
 	var TitleLabel: UILabel!
     var HomeTableView: UITableView!
+	var accountButton: UIButton!
 	
 	// Temp
 	let arr = [
@@ -95,9 +96,29 @@ class HomeVC: UIViewController {
 			
 			return label
 		}()
+		
+		accountButton = {
+			let button = UIButton()
+			
+			button.setTitle("AH", for: .normal)
+			button.setTitleColor(.black, for: .normal)
+			button.titleLabel?.font = UIFont(name: "MavenPro-Medium", size: 12)
+			button.backgroundColor = UIColor(red: 0.80, green: 0.80, blue: 0.80, alpha: 1.0)
+			button.layer.cornerRadius = 15
+			button.clipsToBounds = true
+			
+			TitleBar.addSubview(button)
+			
+			button.snp.makeConstraints({ (make) in
+				make.centerY.equalTo(TitleLabel)
+				make.right.equalToSuperview().offset(-20)
+				make.width.equalTo(30)
+				make.height.equalTo(30)
+			})
+			return button
+		}()
 
     }
-
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {

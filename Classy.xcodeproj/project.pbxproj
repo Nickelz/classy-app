@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1124FEF722EB6B2300E2FC58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1124FEF622EB6B2300E2FC58 /* GoogleService-Info.plist */; };
 		11260E6222C219CD00D19848 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11260E6122C219CD00D19848 /* CalendarCell.swift */; };
 		1129D8F722A7CE3F00298897 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129D8F622A7CE3F00298897 /* AppDelegate.swift */; };
 		1129D8FE22A7CE4400298897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1129D8FD22A7CE4400298897 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1124FEF622EB6B2300E2FC58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11260E6122C219CD00D19848 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		1129D8F322A7CE3E00298897 /* Classy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1129D8F622A7CE3F00298897 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				1129D8F622A7CE3F00298897 /* AppDelegate.swift */,
 				1129D8FF22A7CE4400298897 /* LaunchScreen.storyboard */,
 				1129D90222A7CE4400298897 /* Info.plist */,
+				1124FEF622EB6B2300E2FC58 /* GoogleService-Info.plist */,
 				1129D90A22A7CE8400298897 /* Model */,
 				1129D90922A7CE8000298897 /* View */,
 				1129D90822A7CE7600298897 /* Controller */,
@@ -301,6 +304,7 @@
 				1129D90122A7CE4400298897 /* LaunchScreen.storyboard in Resources */,
 				1129D8FE22A7CE4400298897 /* Assets.xcassets in Resources */,
 				116E928222E61B160062018D /* DatesCell.xib in Resources */,
+				1124FEF722EB6B2300E2FC58 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

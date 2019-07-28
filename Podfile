@@ -7,4 +7,5 @@ target 'Classy' do
 
   # Pods for Classy
   pod 'SnapKit', '~> 4.0.0'
+  pod 'Firebase/Analytics'
 end

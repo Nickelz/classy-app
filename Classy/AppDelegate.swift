@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -35,8 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for viewController in [home, calendar, courses] {
             viewController.view.backgroundColor = BACKGROUND_COLOR
         }
-		
-		FirebaseApp.configure()
+        
         return true
     }
 

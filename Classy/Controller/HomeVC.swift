@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import Firebase
 
 class HomeVC: UIViewController {
     
@@ -24,7 +25,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         createUserInterface()
     }
     

@@ -7,36 +7,55 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+	
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let home = HomeVC()
+		FirebaseApp.configure()
+		
+		let home = HomeVC()
         let calendar = CalendarVC()
         let courses = CoursesVC()
+		let register = RegisterVC()
+		
+//		print(Auth.auth().currentUser?.email as Any)
+
         home.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home"), tag: 1)
         calendar.tabBarItem = UITabBarItem(title: "Calendar", image: #imageLiteral(resourceName: "cal"), tag: 2)
         courses.tabBarItem = UITabBarItem(title: "Courses", image: #imageLiteral(resourceName: "books"), tag: 3)
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
         let base = BubbleTabBarController()
             base.viewControllers = [home, calendar, courses]
             base.tabBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             base.tabBar.backgroundColor = .white
-        window!.rootViewController = base
-        window!.makeKeyAndVisible()
-        
+
+		Auth.auth().addStateDidChangeListener { (_, user) in
+			if user != nil {
+				self.setRootViewController(base)
+				print(Auth.auth().currentUser!.email! as Any)
+			} else {
+				self.setRootViewController(register)
+				print("RVC")
+			}
+		}
+
         for viewController in [home, calendar, courses] {
             viewController.view.backgroundColor = BACKGROUND_COLOR
         }
-        
+		
         return true
     }
+	
+	func setRootViewController(_ viewController: UIViewController) {
+		self.window!.rootViewController = viewController
+		self.window!.makeKeyAndVisible()
+	}
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

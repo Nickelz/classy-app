@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MavenPro-Bold.ttf">
+            <string>MavenPro-Bold</string>
+        </array>
+        <array key="MavenPro-Medium.ttf">
+            <string>MavenPro-Medium</string>
+        </array>
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Classy" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="1PT-HW-eeJ" id="YoE-lo-K8d"/>
+                <outlet property="emailContainer" destination="V0h-Wq-gjl" id="rDN-NU-AdN"/>
+                <outlet property="emailLine" destination="KOe-Rv-3i4" id="EIi-fa-loS"/>
+                <outlet property="emailTextField" destination="SCH-WK-1LZ" id="lR4-9u-CaA"/>
+                <outlet property="passwordContainer" destination="5a9-uX-CeF" id="IGS-H4-HNu"/>
+                <outlet property="passwordLine" destination="8G2-7C-hZu" id="igO-4t-lKX"/>
+                <outlet property="passwordTextField" destination="U4M-dG-l6a" id="pfb-JA-Jm6"/>
+                <outlet property="view" destination="ZEY-gH-Gwv" id="IbG-93-uVB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZEY-gH-Gwv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCt-Px-hOM">
+                    <rect key="frame" x="30" y="194" width="354" height="63.5"/>
+                    <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0h-Wq-gjl">
+                    <rect key="frame" x="20" y="332.5" width="374" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOe-Rv-3i4">
+                            <rect key="frame" x="10" y="7" width="1.5" height="26"/>
+                            <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1.5" id="fle-zP-279"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email / Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCH-WK-1LZ">
+                            <rect key="frame" x="21.5" y="0.0" width="352.5" height="40"/>
+                            <fontDescription key="fontDescription" name="MavenPro-Medium" family="Maven Pro Medium" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KOe-Rv-3i4" firstAttribute="top" secondItem="V0h-Wq-gjl" secondAttribute="top" constant="7" id="7pT-Q2-pov"/>
+                        <constraint firstItem="SCH-WK-1LZ" firstAttribute="top" secondItem="V0h-Wq-gjl" secondAttribute="top" id="FsV-rS-jIx"/>
+                        <constraint firstAttribute="bottom" secondItem="SCH-WK-1LZ" secondAttribute="bottom" id="UNn-id-Wna"/>
+                        <constraint firstAttribute="height" constant="40" id="ba4-7D-vcr"/>
+                        <constraint firstAttribute="bottom" secondItem="KOe-Rv-3i4" secondAttribute="bottom" constant="7" id="gEX-VQ-nyS"/>
+                        <constraint firstAttribute="trailing" secondItem="SCH-WK-1LZ" secondAttribute="trailing" id="iGU-1q-1mB"/>
+                        <constraint firstItem="SCH-WK-1LZ" firstAttribute="leading" secondItem="KOe-Rv-3i4" secondAttribute="trailing" constant="10" id="j7r-sf-gEs"/>
+                        <constraint firstItem="KOe-Rv-3i4" firstAttribute="leading" secondItem="V0h-Wq-gjl" secondAttribute="leading" constant="10" id="uTv-mk-5A1"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a9-uX-CeF">
+                    <rect key="frame" x="20" y="387.5" width="374" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G2-7C-hZu">
+                            <rect key="frame" x="10" y="7" width="1.5" height="26"/>
+                            <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1.5" id="sRW-qc-N1b"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4M-dG-l6a" customClass="TextField" customModule="Classy" customModuleProvider="target">
+                            <rect key="frame" x="21.5" y="0.0" width="352.5" height="40"/>
+                            <fontDescription key="fontDescription" name="MavenPro-Medium" family="Maven Pro Medium" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="U4M-dG-l6a" firstAttribute="bottom" secondItem="jhT-95-ied" secondAttribute="bottom" id="N4j-mw-TcM"/>
+                        <constraint firstItem="8G2-7C-hZu" firstAttribute="top" secondItem="5a9-uX-CeF" secondAttribute="top" constant="7" id="QLc-zv-G8O"/>
+                        <constraint firstAttribute="bottom" secondItem="8G2-7C-hZu" secondAttribute="bottom" constant="7" id="gmm-Tc-yeU"/>
+                        <constraint firstAttribute="height" constant="40" id="n55-h6-ThY"/>
+                        <constraint firstItem="8G2-7C-hZu" firstAttribute="leading" secondItem="jhT-95-ied" secondAttribute="leading" constant="10" id="oAO-Ec-klZ"/>
+                        <constraint firstItem="jhT-95-ied" firstAttribute="trailing" secondItem="U4M-dG-l6a" secondAttribute="trailing" id="pFU-Dh-QyU"/>
+                        <constraint firstItem="U4M-dG-l6a" firstAttribute="top" secondItem="jhT-95-ied" secondAttribute="top" id="u77-Rh-Ote"/>
+                        <constraint firstItem="U4M-dG-l6a" firstAttribute="leading" secondItem="8G2-7C-hZu" secondAttribute="trailing" constant="10" id="wgY-bj-Yfd"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="jhT-95-ied"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="S1m-Ce-Gbh">
+                    <rect key="frame" x="20" y="643.5" width="374" height="27"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKm-Qs-WSu">
+                            <rect key="frame" x="0.0" y="0.0" width="148" height="27"/>
+                            <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="12"/>
+                            <state key="normal" title="RESET PASSWORD">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-mA-lEX">
+                            <rect key="frame" x="226" y="0.0" width="148" height="27"/>
+                            <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="12"/>
+                            <state key="normal" title="CREATE NEW ACCOUNT">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6xw-v3-GIX">
+                    <rect key="frame" x="27" y="756.5" width="360" height="15.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MED-hT-Drz">
+                            <rect key="frame" x="0.0" y="7" width="80" height="1.5"/>
+                            <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="HKr-ML-kLY"/>
+                                <constraint firstAttribute="height" constant="1.5" id="SqB-AY-ZY1"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR CONNECT WITH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLK-y2-vUe">
+                            <rect key="frame" x="94" y="0.0" width="172" height="15.5"/>
+                            <fontDescription key="fontDescription" name="MavenPro-Bold" family="Maven Pro" pointSize="13"/>
+                            <color key="textColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dc-St-5M5">
+                            <rect key="frame" x="280" y="7.5" width="80" height="1"/>
+                            <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Ipd-7b-QFj"/>
+                                <constraint firstAttribute="width" constant="80" id="sYB-ll-ETl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="q0j-Xs-1xz">
+                    <rect key="frame" x="162" y="802" width="90" height="30"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-Qk-9gK">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="HDf-3r-BAg"/>
+                                <constraint firstAttribute="height" constant="30" id="bhs-g6-C3c"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="3ei-2b-VE2">
+                            <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="BPP-mc-HlS"/>
+                                <constraint firstAttribute="height" constant="30" id="hf6-bg-0CK"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-HW-eeJ">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q0j-Xs-1xz" firstAttribute="top" secondItem="6xw-v3-GIX" secondAttribute="bottom" constant="30" id="1xk-RC-2aW"/>
+                <constraint firstItem="5a9-uX-CeF" firstAttribute="top" secondItem="V0h-Wq-gjl" secondAttribute="bottom" constant="15" id="305-nd-ue0"/>
+                <constraint firstItem="eCt-Px-hOM" firstAttribute="leading" secondItem="WvV-EK-ZO1" secondAttribute="leading" constant="30" id="5gN-e4-tiS"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="trailing" secondItem="V0h-Wq-gjl" secondAttribute="trailing" constant="20" id="AlI-Df-BZz"/>
+                <constraint firstItem="5a9-uX-CeF" firstAttribute="leading" secondItem="WvV-EK-ZO1" secondAttribute="leading" constant="20" id="DjT-6j-lBT"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="trailing" secondItem="5a9-uX-CeF" secondAttribute="trailing" constant="20" id="T0K-wl-eUY"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="bottom" secondItem="q0j-Xs-1xz" secondAttribute="bottom" constant="30" id="UWm-cN-ecF"/>
+                <constraint firstItem="eCt-Px-hOM" firstAttribute="top" secondItem="WvV-EK-ZO1" secondAttribute="top" constant="150" id="YhO-XX-rnW"/>
+                <constraint firstItem="V0h-Wq-gjl" firstAttribute="leading" secondItem="WvV-EK-ZO1" secondAttribute="leading" constant="20" id="Zys-M9-SWS"/>
+                <constraint firstItem="6xw-v3-GIX" firstAttribute="top" secondItem="S1m-Ce-Gbh" secondAttribute="bottom" constant="86" id="c3m-5s-eXr"/>
+                <constraint firstItem="1PT-HW-eeJ" firstAttribute="centerX" secondItem="ZEY-gH-Gwv" secondAttribute="centerX" id="cdR-CS-j3C"/>
+                <constraint firstItem="S1m-Ce-Gbh" firstAttribute="leading" secondItem="WvV-EK-ZO1" secondAttribute="leading" constant="20" id="eIh-4O-IOk"/>
+                <constraint firstItem="6xw-v3-GIX" firstAttribute="leading" secondItem="WvV-EK-ZO1" secondAttribute="leading" constant="27" id="eM9-6L-whs"/>
+                <constraint firstItem="q0j-Xs-1xz" firstAttribute="centerX" secondItem="ZEY-gH-Gwv" secondAttribute="centerX" id="kPz-gW-jHW"/>
+                <constraint firstItem="1PT-HW-eeJ" firstAttribute="centerY" secondItem="ZEY-gH-Gwv" secondAttribute="centerY" id="pEf-CF-81h"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="trailing" secondItem="S1m-Ce-Gbh" secondAttribute="trailing" constant="20" id="rtK-lK-KXU"/>
+                <constraint firstItem="V0h-Wq-gjl" firstAttribute="top" secondItem="eCt-Px-hOM" secondAttribute="bottom" constant="75" id="tUN-7F-blr"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="trailing" secondItem="eCt-Px-hOM" secondAttribute="trailing" constant="30" id="w2D-CC-pks"/>
+                <constraint firstItem="WvV-EK-ZO1" firstAttribute="trailing" secondItem="6xw-v3-GIX" secondAttribute="trailing" constant="27" id="xkl-mH-aMl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="WvV-EK-ZO1"/>
+            <point key="canvasLocation" x="123" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="google" width="120" height="120"/>
+        <image name="twitter" width="120" height="120"/>
+    </resources>
+</document>

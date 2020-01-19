@@ -47,3 +47,6 @@ extension UITableViewCell {
 		return "\(self)"
 	}
 }
+
+
+let LOGGED_IN_KEY = "loggedIn"

@@ -16,6 +16,8 @@ class HomeVC: UIViewController {
     var TitleBar: UIView!
 	var TitleLabel: UILabel!
     var HomeTableView: UITableView!
+	var ProfileCircle: UIView!
+    var ProfileName: UILabel!
 	
 	// Temp
 	let arr = [
@@ -25,7 +27,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         createUserInterface()
     }
     
@@ -78,6 +80,7 @@ class HomeVC: UIViewController {
             return view
         }()
 		
+		
 		TitleLabel = {
 			let label = UILabel()
 			
@@ -96,9 +99,67 @@ class HomeVC: UIViewController {
 			
 			return label
 		}()
+        
+        ProfileCircle = {
+            let view = UIView()
+            TitleBar.addSubview(view)
+            
+            view.snp.makeConstraints { (make) in
+                make.right.equalToSuperview().offset(-20)
+                make.centerY.equalTo(TitleLabel)
+                make.width.equalTo(30)
+                make.height.equalTo(30)
+            }
+            
+            view.layoutIfNeeded()
+            view.backgroundColor = #colorLiteral(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
+            view.layer.cornerRadius = view.frame.width / 2
+            view.layer.masksToBounds = true
+            
+            return view
+        }()
+        
+        ProfileName = {
+            let label = UILabel()
+            
+            ProfileCircle.addSubview(label)
+            
+            label.snp.makeConstraints { (make) in
+                make.top.equalToSuperview()
+                make.right.equalToSuperview()
+                make.bottom.equalToSuperview()
+                make.left.equalToSuperview()
+            }
+            
+            label.textAlignment = .center
+            label.text = "-"
+            label.font = UIFont(name: "MavenPro-Medium", size: 12)
+            label.textColor = .black
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(ProfileNameLabelPressed))
+            label.isUserInteractionEnabled = true
+            label.addGestureRecognizer(tap)
+            
+            return label
+        }()
 
     }
-
+    
+    @objc func ProfileNameLabelPressed() {
+        let alert = UIAlertController(title: "Profile", message: Auth.auth().currentUser?.email, preferredStyle: .actionSheet)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        let logout = UIAlertAction(title: "Log out", style: .destructive) { _ in
+            do {
+                try Auth.auth().signOut()
+            } catch let signOutError as NSError {
+                print("Error signing out: %@", signOutError)
+            }
+        }
+        
+        alert.addAction(logout)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {

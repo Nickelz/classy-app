@@ -34,9 +34,9 @@
 		119F556322F5CF1400CE13A4 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119F556122F5CF1400CE13A4 /* RegisterVC.xib */; };
 		119F556922F5F7E200CE13A4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F556722F5F7E200CE13A4 /* LoginVC.swift */; };
 		119F556A22F5F7E200CE13A4 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 119F556822F5F7E200CE13A4 /* LoginVC.xib */; };
-		119F556E22F5FAB400CE13A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 119F556D22F5FAB300CE13A4 /* GoogleService-Info.plist */; };
 		119F557222F602FD00CE13A4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 119F557122F602FD00CE13A4 /* Pacifico-Regular.ttf */; };
 		119F557522F603C200CE13A4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F557422F603C200CE13A4 /* AuthService.swift */; };
+		11AC249323D40BC800C54823 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11AC249223D40BC800C54823 /* GoogleService-Info.plist */; };
 		11B4288A22F7C87D00E43E3C /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B4288922F7C87D00E43E3C /* TextField.swift */; };
 		11BD5F5122E7309A0056F75E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F5022E7309A0056F75E /* Constants.swift */; };
 		11BD5F5822E765450056F75E /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD5F5622E765450056F75E /* ClassCell.swift */; };
@@ -82,9 +82,9 @@
 		119F556122F5CF1400CE13A4 /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		119F556722F5F7E200CE13A4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		119F556822F5F7E200CE13A4 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		119F556D22F5FAB300CE13A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		119F557122F602FD00CE13A4 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		119F557422F603C200CE13A4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		11AC249223D40BC800C54823 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11B4288922F7C87D00E43E3C /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		11BD5F5022E7309A0056F75E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11BD5F5622E765450056F75E /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				1129D8F622A7CE3F00298897 /* AppDelegate.swift */,
 				1129D8FF22A7CE4400298897 /* LaunchScreen.storyboard */,
 				1129D90222A7CE4400298897 /* Info.plist */,
-				119F556D22F5FAB300CE13A4 /* GoogleService-Info.plist */,
+				11AC249223D40BC800C54823 /* GoogleService-Info.plist */,
 				1129D90A22A7CE8400298897 /* Model */,
 				1129D90922A7CE8000298897 /* View */,
 				1129D90822A7CE7600298897 /* Controller */,
@@ -335,11 +335,11 @@
 				116E927E22E619140062018D /* CourseInformationCell.xib in Resources */,
 				119F557222F602FD00CE13A4 /* Pacifico-Regular.ttf in Resources */,
 				1129D92222A9130600298897 /* Classes in Resources */,
+				11AC249323D40BC800C54823 /* GoogleService-Info.plist in Resources */,
 				1129D90122A7CE4400298897 /* LaunchScreen.storyboard in Resources */,
 				119F556322F5CF1400CE13A4 /* RegisterVC.xib in Resources */,
 				1129D8FE22A7CE4400298897 /* Assets.xcassets in Resources */,
 				116E928222E61B160062018D /* DatesCell.xib in Resources */,
-				119F556E22F5FAB400CE13A4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

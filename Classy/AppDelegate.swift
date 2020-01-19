@@ -38,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		Auth.auth().addStateDidChangeListener { (_, user) in
 			if user != nil {
 				self.setRootViewController(base)
+                home.ProfileName.text = "\(user!.displayName?.first!.uppercased() ?? user!.email!.first!.uppercased())"
 				print(Auth.auth().currentUser!.email! as Any)
 			} else {
 				self.setRootViewController(register)
